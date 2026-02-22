@@ -507,7 +507,7 @@
       </a>
     </div>
 
-    <button class="btn-send" id="sendBtn" type="button">
+    <button class="btn-send" id="sendBtn" type="submit">
       Send Message
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
@@ -546,28 +546,7 @@
       ring.style.borderColor = 'rgba(200,169,110,0.4)';
     });
   });
-
-  // Form submit
-  document.getElementById('sendBtn').addEventListener('click', () => {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-      // Shake empty required fields
-      [document.getElementById('name'), document.getElementById('email'), document.getElementById('message')].forEach(el => {
-        if (!el.value.trim()) {
-          el.style.borderColor = 'rgba(200,100,100,0.6)';
-          el.style.animation = 'none';
-          setTimeout(() => { el.style.borderColor = ''; }, 1200);
-        }
-      });
-      return;
-    }
-
-    // Show success
-    document.getElementById('successOverlay').classList.add('show');
-  });
+ 
 </script>
 </body>
 </html>
