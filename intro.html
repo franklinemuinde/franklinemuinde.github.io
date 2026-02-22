@@ -543,6 +543,15 @@
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--accent); }
+ 
+ /* Skills section */
+  .skills-section { padding: 80px 10vw; border-bottom: 1px solid var(--border); }
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 48px; }
+  .skill-card { background: var(--bg); padding: 36px 32px; transition: background 0.3s; cursor: none; }
+  .skill-card:hover { background: var(--surface); }
+  .skill-icon { width: 36px; height: 36px; border: 1px solid var(--accent); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 14px; }
+  .skill-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 400; margin-bottom: 10px; }
+  .skill-desc { font-size: 13px; line-height: 1.7; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -556,7 +565,7 @@
   <li><a href="intro.html" class="active">Intro</a></li>
   <li><a href="projects.html">Projects</a></li>
   <li><a href="contact.html">Contact</a></li>
-  <li><a href="#">Resume</a></li>
+  <li><a href="resume.pdf">Resume</a></li>
 </ul>
 </nav>
 
